@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa; //will see later
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa;
+  position: relative; 
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  top: 30px;
+  margin-top: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1px;
+}
+#nav h2 {
+  height: 100%;
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  font-size: 23px;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+#nav h1 {
+  height: 100%;
+  width: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  letter-spacing: -1px;
+  color: #0d1b2a;
+}
+#nav h2:last-child {
+  width: 12%;
+}
+#centre {
+  height: 90%;
+  width: 100%;
+  padding: 3vw;
+  position: relative;
+}
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#overlay {
+  height: 55%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+}
+#over1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #dee2e6;
+}
+#over1 h1 {
+  font-family: "Bebas Neue";
+  font-size: 6vw;
+  mix-blend-mode: difference;
+}
+#over1 h2 {
+  font-family: "Bebas Neue";
+  font-size: 2vw;
+  border-radius: 50%;
+  padding: 2vw 2.5vw;
+  border: 1px solid #dee2e6;
+}
+#over2 {
+  color: #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #dee2e6;
+}
+
+#over2 h4 {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+#over2 img {
+  height: 5vw; /* Reduce size slightly */
+  max-width: 100%; /* Prevents overflow */
+}
+#scroll {
+  height: 40vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#scroll img {
+  height: 90%;
+  width: 15%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1vw;
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 2vw;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#alphabet h5 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-right: 2vw;
+}
+#alphabet h6 {
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0.5vw 0.8vw;
+  letter-spacing: 3px;
+  transition: all ease 0.2s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#alphabet h6:hover {
+  border-radius: 50%;
+  scale: 1.2;
+  background-color: #415a77;
+  color: #e9ecef;
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Ensures #page2-right starts at the top */
+  gap: 1.5vw;
+}
+
+#page2-left {
+  height: 100%; /* Full height */
+  width: 60%;
+  /* background-color: red; */
+}
+#page2-left img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page2-left h1 {
+  font-family: "Bebas Neue";
+  font-size: 6vw;
+  padding: 1vw 0;
+  color: #0d1b2a;
+}
+
+#page2-right {
+  height: 60%; /* Only 60% of the parent's height */
+  width: 40%;
+  margin-right: 2.5vw;
+  /* background-color: green; */
+  align-self: flex-start; /* Ensures it starts at the top */
+}
+
+#page2-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
