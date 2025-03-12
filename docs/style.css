@@ -15,7 +15,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #f8f9fa;
-  position: relative; 
+  position: relative;
 }
 
 #nav {
@@ -198,20 +198,20 @@ body {
   /* background-color: red; */
 }
 #page2-left img {
-  height: 90%;
+  height: 95%;
   width: 100%;
   object-fit: cover;
 }
 
 #page2-left h1 {
   font-family: "Bebas Neue";
-  font-size: 6vw;
+  font-size: 4vw;
   padding: 1vw 0;
   color: #0d1b2a;
 }
 
 #page2-right {
-  height: 60%; /* Only 60% of the parent's height */
+  height: 70%; /* Only 60% of the parent's height */
   width: 40%;
   margin-right: 2.5vw;
   /* background-color: green; */
@@ -219,6 +219,88 @@ body {
 }
 
 #page2-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page2-right-text {
+  height: 27%; /* Only 40% of the parent's height */
+  width: 100%;
+  margin-top: 0.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page2-right-left {
+  height: 100%;
+  width: 50%;
+  padding: 1vw;
+}
+#page2-right-left h2 {
+  font-family: "Bebas Neue";
+  font-size: 2.5vw;
+  color: #0d1b2a;
+  font-weight: 500;
+  line-height: 0.8;
+}
+#page2-right-right {
+  height: 100%;
+  width: 50%;
+  padding: 1vw;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3vw;
+  gap: 1.5vw;
+}
+#page3-left {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+#page3-left-top {
+  height: 60%; /* Takes 60% of the parent's height */
+  width: 100%;
+  padding: 1vw;
+  /* background-color: red; Red background */
+}
+
+#page3-left-top img {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  max-width: 80%; /* Adjusts size inside the container */
+  aspect-ratio: 1 / 1; /* Ensures a perfect square before applying border-radius */
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1vw; /* Remove padding to maintain a perfect circle */
+}
+
+#page3-left-bottom {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#page3-left-bottom h2 {
+  font-family: "Bebas Neue";
+  font-size: 1vw;
+  padding-bottom: 1vw;
+  color: #0d1b2a;
+  line-space: 1;
+  line-height: 1.5;
+}
+
+#page3-right {
+  height: 100%;
+  width: 60%;
+}
+#page3-right img {
   height: 100%;
   width: 100%;
   object-fit: cover;
