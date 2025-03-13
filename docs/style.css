@@ -52,6 +52,24 @@ body {
   letter-spacing: -1px;
   color: #0d1b2a;
 }
+#nav h1:after {
+  content: "©";
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 30px;
+  position: relative;
+  top: -20px;
+}
+#nav h1:before {
+  content: "Model Management";
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  top: 35px;
+  margin-top: 0.3vw;
+  left: 205px;
+}
 #nav h2:last-child {
   width: 12%;
 }
@@ -122,12 +140,13 @@ body {
 }
 #scroll img {
   height: 90%;
+  background-color: blue;
   width: 15%;
   border-radius: 50%;
   object-fit: cover;
   margin: 1vw;
   animation-name: slide;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
